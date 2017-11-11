@@ -1,0 +1,159 @@
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: Roboto;
+    background-color: #501273;
+    scrollbar-face-color: blueviolet;
+}
+
+html{
+    height: 100%;
+}
+
+.nav-esquerda{
+    border-right: 3px solid rgba(0,0,0,0.2);
+}
+
+.fundo{
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    background-color: #501273;
+}
+
+.fundo-transparente{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header{
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+    font-family: Lobster;
+}
+
+.nav-link
+{
+    margin-bottom: 3%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #612981;
+}
+
+.btn-secondary{
+    background-color: #9670ab;
+    border-color: #9670ab;
+}
+
+.dropdown-menu{
+    text-align: center;
+    justify-content: center;
+}
+
+.dropdown-item{
+    background-color: white;
+    padding-right: 0;
+    padding-left: 0;
+    width: 4em;
+    border-radius: 0!important;
+}
+
+.dropdown-item:hover{
+    background-color: white;
+    border: 1px solid #c440c5;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn:focus, .btn:hover{
+    background-color: #612981;
+    border-color: #612981;
+}
+
+.resultados h4{
+    font-size: 0.90rem;
+    color: yellow;
+}
+
+.resultados{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.resultados th{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+}
+
+.resultados th .col{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.resultados tr{
+    border: 1px solid white;
+}
+
+.resultados td{
+    padding: 10px 10px 10px 10px;
+}
+
+.resultados tr td{
+    border: 1px solid white; 
+    
+}
+
+.table-responsive{
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 200px;
+}
+
+table{
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+    background-color: #612981;
+    border-color: #612981;
+}
+
+.form-control{
+    margin-bottom: 2%;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgba(38, 16, 51, 0.20);
+    border-color: #261033;
+}
+
+label{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.esticar{
+    height: 100%;
+}
+
+.esticar-metade{
+    height: 50%;
+}
+
+.controle{
+    height: 50%;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "simplecalc",
+  "version": "1.0.0",
+  "description": "First attempt to create a calculus calculator",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "electron": "^1.8.1",
+    "expr-eval": "^1.2.0",
+    "jquery": "^3.2.1",
+    "mathjs": "^3.16.5",
+    "popper.js": "^1.12.6"
+  }
+}

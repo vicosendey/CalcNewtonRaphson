@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="fontes/lob-font.css">
+  <title>Newton-Raphson</title>
+</head>
+<body>
+
+  <div class="container fundo">
+    <div class="row esticar">
+
+      <div class="col-sm-4 fundo-transparente">
+        <div class="container esticar">
+          <div class="row esticar align-items-center">
+            <div class="col-sm-12">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <header>Calculadora Virtual</header>
+                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Newton-Raphson</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-8">
+          <div class="container esticar-metade">
+              <div class="row esticar align-items-end">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="equacao_input">Polinômio</label>
+                        <input type="text" value="x*ln(x)-3" class="equacao form-control" id="equacao_input" aria-describedby="campo_ajuda" placeholder="Polinômio" required>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Operações
+                          </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <div class="btn-group" role="group" aria-label="Linha 1">
+                                    <button type="button" class="btn btn-secondary dropdown-item">+</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">-</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">÷</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">x</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">(</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">)</button>
+                                    
+                                  </div>
+                                  <div class="btn-group" role="group" aria-label="Linha 2">
+                                    <button type="button" class="btn btn-secondary dropdown-item">√</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">π</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">sen</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">cos</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">tan</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">e^</button>
+                                  </div>
+                                  <div class="btn-group" role="group" aria-label="Linha 3">
+                                    <button type="button" class="btn btn-secondary dropdown-item">cossec</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">sec</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">cotg</button>
+                                    <button type="button" class="btn btn-secondary dropdown-item">ln</button>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="erro_input_input">Erro</label>
+                        <input value="0.0000001" type="text" class="erro form-control" id="erro_input" aria-describedby="campo_ajuda" placeholder="Erro" required>
+                        <button type="button" id="erro_input" class="btn btn-secondary enviar">Calcular</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="container esticar-metade">
+            <div class="row esticar align-items-start">
+              <div class="col-sm-12 justify-content-center">
+                <table class="resultados table-responsive table-hover"></table>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script> window.jQuery = window.$ = require('jquery'); </script>
+  <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../js/renderer.js"></script>
+</body>
+</html>
